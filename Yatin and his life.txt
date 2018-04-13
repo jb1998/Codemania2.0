@@ -1,0 +1,57 @@
+Yatin is a Talented student.Afer performing well in class 12, he went for engineering.
+It's not that he choose engineering rather engineering choose him.
+He needs certain level of motivation just after class 12.
+Now he is standing in begining phase of engineering life.
+There are many ups and downs in engineering life.
+
+Let's assume the engineering life is divided into some weeks.
+Each week may or may not have an event associated with it.
+Also the motivation level of yatin reduces by 10 after every week.
+
+The events can be :
+Party - represented by 'p' which increases energy level by 100
+Watching movie - represented by 'm' which increases energy level by 50
+Small outings - represented by 'o' which increases energy level by 80
+Internal exams - represented by 'i' which decreases energy level by 100
+Externals exams - represented by 'e' which decreases energy level by 200
+No event - represented by 'n'
+
+Yatin needs enough motivation level so that he can survive through engineering life.
+Yatin is good programmer but he is busy applying to other universities for BTech.
+Your task is to help yatin to find out the minimum motivation level required to survive through engineering life.
+
+
+Input :
+First line of input represent the number of testcases T
+T lines follows
+Each test case has integer n representing number of weeks
+Next line contains n characters separated by space, representing the event associated with that week
+ 
+Output :
+Print T lines each representing the minimum motivation level of Yatin at start of engineering.
+
+Sample Input
+2
+5
+oipme
+6
+niipmn
+
+Sample output
+120
+110
+
+Constraints
+1< T <1000
+1< n <1000
+
+
+Explaination :
+For Test case 1 :
+So taking motivation level 120 at start
+At 'o' motivation level increase by 80 making it 120+80=200 but after 'o' decreased by 10 making it 190.
+When 'i' is encounter energy level decrease by 100 so 190-100=90.After 'i' decreased by 10 making it 80.
+When 'p' is encounter energy level increase by 100 so 80+100=180.After 'p' decreased by 10 making it 170.
+When 'm' is encounter energy level increase by 50 so 170+50=220.After 'm' decreased by 10 making it 210.
+When 'e' is encounter energy level decrease by 200 so 210-200=10.After 'm' decreased by 10 making it 0.
+Thus 120 motivation level of 120 is sufficient for yatin so that he can survive through engineering life. 
