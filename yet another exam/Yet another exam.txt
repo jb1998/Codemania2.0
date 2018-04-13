@@ -1,0 +1,42 @@
+Oh it's time for college exams.
+The students are sitting in examination hall.
+It consists of seats arranged in such a manner that it forms n rows
+and m columns
+
+The seats present in hall is manufactured by two companies.
+The two companies put their labels on seats.
+The labels are in form of single digit 0 or 1
+Coincidentally the students that have not studied sit on seats with label 0.
+Inorder to pass the exam they need to look up other students answer sheet.
+
+The student sitting on label 0 seat can cheat from student sitting on label 1 seat if
+and only if the student is sitting in his neighbour(right,left,front,behind,front-left,front-right,behind-left,behind-right)
+Also after cheating the student at label 0 is smart and does not help another student
+at label 0.
+
+You are given the configuration of seats in form of 2-D matrix
+The matrix has 0s and 1s representing labels of seats.
+
+You need to print the number of students that pass the exam.
+
+Input format  :
+The first line contains (T) the number of test cases.
+Each test case is followed by two integers m,n representing rows and columns respectively.
+m lines follows,each containing n separated integers(0s or 1s)
+
+Output format :
+Print T lines each representing the number of students who pass the exam.
+
+sample input
+1
+3 3
+0 0 0
+0 0 0
+1 0 0
+
+sample output
+4
+
+Explaination :
+The three students sitting on seats with labels 0 around the student sitting on label 1 can cheat from that student sitting on label 1 seat
+Thus, 4 students pass the exam(the three students sitting on seats with labels 0 and one sitting on label 1)
