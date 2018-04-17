@@ -1,0 +1,42 @@
+PROBLEM LINK:https://www.codechef.com/problems/EGJAM
+
+##Author:** [Ankush Garg][Ankush1998][Jatin Bindra][jb1998] 
+**Tester:** [Ayush Yadav] 
+**Editorialist:** [Jatin Bindra][jb1998]
+
+#DIFFICULTY:
+CAKEWALK
+
+#PREREQUISITES:
+Basic knowledge of 2-D matrix
+
+#PROBLEM:
+We just need to print the sum of total number of one's in matrix with total number of zeros surrounded by immediate ones (front, behind, left, right, front-left, front-right, behind-left, behind-right).
+
+#QUICK EXPLANATION:
+Just iterate through the matrix and keep a variable count.Increase the value of count when 1 is encountered and for each zero check the immediate neighbours if exist.If immediate neighbours of current zero is one then increment count by one.
+
+At the end just print count. 
+
+#EXPLANATION:
+The solution is simple.
+Let's keep a variable count that will store the answer.
+Initially count is 0.
+
+We iterate through the matrix.
+When we found 1 we increment the count by 1.
+When we found 0 we make some checks :
+We check the following positions around every 0 :
+front, behind, left, right, front-left, front-right, behind-left, behind-right
+
+Before making the check of existance of immediate 1,we also need to check if that 0 has neighbours or not.
+
+For example the 0s in top row have no elements at their top so we can't make check on top elements in this case.
+
+After making the check if we found that current 0 is surrounded by immediate 1 then we increment count by 1.
+
+After complete iteration in matrix we return count.
+The solution can be referred below.
+
+#AUTHOR'S AND TESTER'S SOLUTIONS:
+Author's solution can be found [https://www.codechef.com/viewsolution/18310962][jb1998]. 
