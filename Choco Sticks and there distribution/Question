@@ -1,0 +1,69 @@
+All submissions for this problem are available.
+Jatin has some boxes of choco sticks.
+He wants to give the choco sticks to his two friends Yatin and Sahil.
+Jatin is smart and knows that if Yatin got more choco sticks then Sahil will feel 
+bad and if Sahil got more choco sticks then Yatin will feel bad. Jatin decides to 
+distribute the choco sticks in a way that both of them gets equal choco sticks.
+Jatin also likes maths. So to make the distribution interesting he applied some logic.
+
+He decides that the boxes which have choco sticks in multiples of 7 will all go to a single person.
+The boxes that have choco sticks in multiples of 5 (but not of 7) will all go to the another person.
+The boxes that have choco sticks which are neither in the multiples of 7 or 5 could go to either of them.
+
+Jatin doesn't want to waste any box.
+So all boxes must be consumed.
+If it is possible to divide the choco sticks into two equal parts based on the
+above conditions then print true else print false. If it's false then Jatin eats all choco sticks alone.
+
+
+
+
+Input:
+The first line contains T, the number of test cases.
+Each test case contains 2 lines. Line 1 contains a single integer, N(The number of boxes).
+Line 2 contains the number of choco sticks in each of the N boxes separated by space.
+
+
+Output:
+Print T lines each having true or false.
+
+Constraints
+1≤T≤10
+2≤N≤20
+
+
+
+
+
+Sample Input:
+4
+
+2
+
+1 2
+
+2
+
+3 2
+
+3
+
+3 5 2
+
+5
+
+5 7 5 2 1
+
+
+
+
+
+
+Sample Output:
+false
+
+false
+
+true
+
+true
