@@ -1,0 +1,64 @@
+import java.util.Scanner;
+ 
+public class Main {
+    public static boolean helper(int input[],int start,int sum1,int sum2)
+    {
+ 
+        if(start>=input.length)
+        {
+            if(sum1==sum2)
+                return true;
+ 
+            return false;
+        }
+ 
+        if(input[start]%7==0)
+        {
+            sum1+=input[start];
+            boolean a1=helper(input,start+1,sum1,sum2);
+ 
+            if(a1==true)
+            {
+                return true;
+            }
+        }
+        else
+        if(input[start]%5==0 && input[start]%7!=0)
+        {
+            sum2+=input[start];
+            boolean a1=helper(input,start+1,sum1,sum2);
+ 
+            if(a1==true)
+            {
+                return true;
+            }
+        }
+        else
+ 
+        if(input[start]%7!=0 && input[start]%5!=0)
+        {
+            boolean a1=helper(input,start+1,sum1+input[start],sum2);
+            boolean a2=helper(input,start+1,sum1,sum2+input[start]);
+            if(a1==true || a2==true)
+            {
+                return true;
+            }
+        }
+        return false;
+ 
+    }
+ 
+  public static void main(String args[]) {
+      Scanner sc = new Scanner(System.in);
+      int t = sc.nextInt();
+      int iterate=1;
+      while (iterate++<=t) {
+          int n = sc.nextInt();
+          int arr[] = new int[n];
+          for (int i = 0; i < n; i++) {
+              arr[i] = sc.nextInt();
+          }
+          System.out.println(helper(arr,0,0,0));
+      }
+  }
+}
